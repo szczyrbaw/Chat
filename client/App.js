@@ -8,7 +8,7 @@ import MessageList from './MessageList';
 import UsersList from './UsersList';
 import UserForm from './UserForm';
 
-const socket = io('/');
+const socket = io('/http://localhost:3000');
 
 class App extends Component {
     constructor(props) {
@@ -23,7 +23,7 @@ class App extends Component {
     render() {
         return this.state.name !== '' ? (
           this.renderLayout()
-        ) : this.renderUserForm() 
+        ) : this.renderUserForm(); 
     }
     
     messageReceive(message) {
