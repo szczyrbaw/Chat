@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeJsPlugin = require('optimize-js-plugin');
-
+//var env = 'production';
 var env = process.env.NODE_ENV || 'development';
 var plugins = [
 new HtmlWebpackPlugin({
